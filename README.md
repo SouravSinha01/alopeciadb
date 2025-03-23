@@ -22,13 +22,14 @@ AlopeciaDB is a web-based database that provides information on **natural remedi
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** PHP, SQL
 - **Database:** MySQL
+- **Local Server:** XAMPP
 
 ---
 
 ## 📸 Screenshots
 <p align="center">
   <img src="image.png" alt="Homepage" width="600">
-  <img src="Pasted image.png" alt="Search Feature" width="600">
+  <img src="pasted image.png" alt="Search Feature" width="600">
 </p>
 
 ---
@@ -40,16 +41,18 @@ AlopeciaDB is a web-based database that provides information on **natural remedi
  cd AlopeciaDB
 ```
 
-### 2️⃣ Setup Database
-- Import the SQL database file (`alopeciadb.sql`) into your MySQL server.
-- Update the database credentials in `config.php`.
+### 2️⃣ Setup XAMPP & Database
+1. Install [XAMPP](https://www.apachefriends.org/index.html) and start **Apache** and **MySQL**.
+2. Open `phpMyAdmin` (http://localhost/phpmyadmin/) and import the `alopeciadb.sql` file.
+3. Update database credentials in `config.php`.
 
-### 3️⃣ Start the Server
-- Run a local PHP server:
+### 3️⃣ Run the Project
+1. Move the project folder to the `htdocs` directory inside the XAMPP installation.
+2. Start XAMPP and ensure **Apache** and **MySQL** are running.
+3. Open your browser and go to:
 ```sh
-place the entire folder in htdocs folder of Xampp
+http://localhost/AlopeciaDB
 ```
-- Open `http://localhost/alopeciadb` in your browser.
 
 ---
 
@@ -68,10 +71,10 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ---
 
 ## 📬 Contact
-📧 **Email:** your-sinhasourav391@gmail.com<br>
+📧 **Email:** sinhasourav391@gmail.com<br>
 🔗 **Website:** [notyet](https://your-website.com)
 
 ---
 
-<p align="center">✨ Made with ❤️ by dragneel ✨</p>
+<p align="center">✨ Made with ❤️ by Sourav ✨</p>
 
