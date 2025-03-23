@@ -1,0 +1,165 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+#content {
+    width: 70%; /* 90% of the available space */
+    margin: 0 auto;
+    /* max-width: 1000px;  */
+    padding: 10px; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Results Header */
+.results-header h2 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Stats Section */
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.stats-buttons button {
+    background-color: #0b3763;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.page-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.page-button.active-page {
+    background-color: #0056b3;
+    font-weight: bold;
+}
+
+.page-button:hover {
+    background-color: #0056b3;
+}
+
+/* Items-per-page dropdown */
+.items-per-page {
+    margin: 15px auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.items-per-page select {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #a3d6ff;
+    border-radius: 4px;
+}
+
+
+/* Molecule Box */
+.molecule-box-container {
+    margin-top: 20px;
+}
+
+.molecule-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Molecule Card Styling */
+/* Styling for the molecule cards */
+.molecule-card {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.molecule-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.molecule-detail {
+    width: 18%; /* Adjust this depending on the number of details */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.molecule-detail img {
+    width: 100px; /* Adjust the width of the structure image */
+    height: auto;
+}
+
+.molecule-detail strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .molecule-row {
+        flex-direction: column; /* Stack details vertically */
+    }
+
+    .molecule-detail {
+        width: 100%; /* Make each detail span the full width */
+        margin-bottom: 10px; /* Adjust the spacing */
+        text-align: left; /* Align text to the left for better readability */
+    }
+
+    .molecule-detail img {
+        width: 80px; /* Smaller image size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .molecule-card {
+        padding: 15px;
+    }
+
+    .molecule-detail strong {
+        font-size: 12px; /* Smaller font size on very small screens */
+    }
+
+    .molecule-detail img {
+        width: 60px; /* Even smaller image for mobile */
+    }
+}

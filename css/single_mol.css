@@ -1,0 +1,82 @@
+/* Table container */
+.table-container {
+    width: 90%;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow-x: auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Molecule table */
+  .molecule-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  .molecule-table th, .molecule-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .molecule-table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+  
+  .molecule-table tr:hover {
+    background-color: #f7f7f7;
+  }
+  
+  /* Structure images */
+  .structure-image {
+    width: 80px;
+    height: auto;
+  }
+  
+  /* Buttons */
+  .action-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .action-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Pagination */
+  .pagination {
+    margin: 15px auto;
+    text-align: center;
+  }
+  
+  .page-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .page-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Molecule details */
+  .molecule-details {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    text-align: left;
+  }
+  

@@ -1,0 +1,362 @@
+/* General Reset */
+body, h1, h2, p, a, input, button, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll caused by sidebar */
+    background-color: #f0f8ff;
+}
+
+.site-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: border 0.3s ease; /* Smooth transition for the border */
+    padding: 5px 10px; /* Add some padding to make the border more visible */
+    border-radius: 5px; /* Optional: smooth corners for the box */
+}
+.site-title:hover {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Subtle glowing box-shadow around the title */
+}
+
+/* Sidebar Section */
+/* Hamburger Icon */
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    font-size: 28px;
+    z-index: 10; /* Ensures it appears on top initially */
+    color: #ffffff;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Hide the Hamburger Icon When Sidebar Opens */
+  .sidebar.open + .menu-icon {
+    opacity: 0; /* Hides the icon */
+    pointer-events: none; /* Prevents clicks on it */
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px; /* Increased width slightly to fully cover the icon */
+    height: 100%;
+    background-color: #4682b4; /* Sidebar background color */
+    transform: translateX(-280px); /* Initially hidden */
+    transition: transform 0.3s ease-in-out;
+    z-index: 5; /* Sidebar behind the hamburger initially */
+    padding-top: 60px; /* Space for the menu title */
+  }
+  
+  /* Sidebar Open */
+  .sidebar.open {
+    transform: translateX(0); /* Slide in fully */
+  }
+  
+  /* Sidebar Menu Title */
+  .sidebar h3 {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+    margin-top: -10px; /* Adjusting to ensure no overlap */
+  }
+  
+  /* Sidebar Links */
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 0;
+  }
+  
+  .sidebar ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #ffffff33;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #3498db;
+  }
+
+
+/* Advanced Search Pop-up */
+.popup {
+    position: fixed;
+    bottom: -100%; /* Initially hidden */
+    left: 0;
+    width: 100%;
+    height: 100%; /* Set to full height for better responsiveness */
+    background-color: #ffffff;
+    transition: bottom 0.3s ease-in-out;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    width: 80%;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.popup h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.popup ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popup ul li {
+    margin: 10px 0;
+}
+
+.popup ul li a {
+    font-size: 1.2rem;
+    color: #4682b4;
+    text-decoration: none;
+}
+
+.popup ul li a:hover {
+    text-decoration: underline;
+}
+
+.popup .close-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4682b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup .close-btn:hover {
+    background-color: #3498db;
+}
+
+/* Show the popup */
+.popup.open {
+    bottom: 0; /* Show the popup */
+}
+  
+
+/* Top Header Section */
+.top-header {
+    background-color: #4682b4;
+    color: white;
+    padding: 20px 10%;
+    margin-left: 0; /* Removed fixed margin to make layout dynamic */
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+/* Logo Section */
+.logo-container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px; /* Adjust as needed */
+    max-width:100px;
+    margin-right: 10px;
+    
+}
+
+.site-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0b3763; /* Dark blue-gray for title */
+
+}
+
+/* Search Section */
+/* .search-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 ;
+} */
+
+.search-container {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-60%);
+    display: flex;
+    flex-direction: column; /* Ensure vertical stacking */
+    align-items: flex-start;
+    width: 100%;
+    max-width: 400px; /* Increased width for a bigger search bar */
+    z-index: 2;
+}
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #d4eeff;
+}
+/*search box exampling */
+.search-box {
+    position: relative;
+    width: 300px; /* Adjust width as needed */
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #fff7f7;
+    border-radius: 4px;
+}
+#search-query {
+    width: 100%;
+    padding: 12px; /* Increased padding for a bigger bar */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+
+#examples-box {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%; /* Position dropdown directly below search bar */
+    left: auto;
+    right: 0;
+    width: 100%; /* Match the width of the search bar */
+    max-width: 600px; /* Match max-width with search bar */
+    border: 1px solid #ccc;
+    background-color: rgb(178, 216, 252);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#examples-box.visible {
+    display: block; /* Show dropdown when visible class is added */
+}
+
+#examples-list {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#examples-list li {
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color:#181717;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+#examples-list li:hover {
+    background-color: #e6f7ff ;
+}
+
+
+
+.advanced-search {
+    margin-top: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    align-self: flex-start;
+}
+/* Responsive Adjustments to Avoid Overlap */
+@media (max-width: 768px) {
+    .search-container {
+        max-width: 90%; /* Shrink the search container on smaller screens */
+        right: 5%; /* Add margin on smaller screens */
+    }
+    
+    #search-query {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .advanced-search {
+        font-size: 12px; /* Make the button text smaller */
+        margin-top: 5px;
+    }
+}
+/* Navigation Links */
+.navigation {
+    text-align: center;
+}
+
+.navigation a {
+    color: #ffffff; /* Sky blue for navigation links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 1%;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scale */
+}
+
+.navigation a:hover {
+    box-shadow: 0 0 7px hsla(209, 100%, 87%, 0.356); /* Subtle glowing box-shadow */
+}
+/* Main Content Section */
+.content {
+    padding: 20px 10%;
+}
+
+.content h2 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #555;
+}

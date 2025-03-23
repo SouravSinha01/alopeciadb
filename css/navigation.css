@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.molecule-details-card {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header-text h2 {
+    font-size: 24px;
+    color: #555;
+}
+
+.header-image {
+    max-width: 300px;
+    max-height: 300px;
+    flex-shrink: 0; /*  image doesn't shrink */
+}
+
+.structure-imagee {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    object-fit: cover; /* Ensures the image fits the 400x400 ratio */
+}
+
+
+.details-section p {
+    margin: 3px 0; /* Reduce the vertical margin between lines */
+}
+
+.data-field {
+    margin-bottom: 20px;
+}
+
+.data-field h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #444;
+}
+
+
+.details-section hr {
+    margin: 2px 0; /* Reduce the space around the divider */
+    border: 0; /* Reset any unwanted default border style */
+    border-top: 1px solid #ccc; /* Set a simple horizontal line */
+}
+
+.details-section strong {
+    display: block; /* Makes the header and value stack naturally */
+    margin-bottom: 3px; /* Add a tiny space below the header */
+    font-size: 1rem; /* Adjust font size for consistency */
+}
+.data-field p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.data-field a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.data-field a:hover {
+    text-decoration: underline;
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 10px; 
+    margin-left: 20px;
+    padding: 8px 16px; 
+    background-color: #007bff; 
+    color: #fff; /* Text color */
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    text-align: center; 
+    transition: background-color 0.3s ease; 
+}
+
+.download-button:hover {
+    background-color: #0056b3; 
+}
