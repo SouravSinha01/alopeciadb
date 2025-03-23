@@ -59,7 +59,7 @@
                         <p class="examples-title"></p>
                         <ul id="examples-list"></ul>
                     </div>
-                    <p class="example-text">Example: Minoxidil, Finasteride</p>
+                    <p class="example-text"> Example: Minoxidil, Finasteride</p>
                 </form>
                 <!-- <button class="advanced-search" onclick="toggleAdvancedSearch()">Advanced Search</button> -->
 
