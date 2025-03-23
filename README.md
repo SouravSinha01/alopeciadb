@@ -1,7 +1,7 @@
 # AlopeciaDB - A Comprehensive Database for Alopecia Treatments
 
 <p align="center">
-  <img src="https://your-image-url.com/logo.png" alt="AlopeciaDB Logo" width="200">
+  <img src="final.png" alt="AlopeciaDB Logo" width="200">
 </p>
 
 ## 🌿 About AlopeciaDB
