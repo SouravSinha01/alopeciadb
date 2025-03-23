@@ -27,7 +27,7 @@ AlopeciaDB is a web-based database that provides information on **natural remedi
 
 ## 📸 Screenshots
 <p align="center">
-  <img src="https://your-image-url.com/screenshot1.png" alt="Homepage" width="600">
+  <img src="image.png" alt="Homepage" width="600">
   <img src="https://your-image-url.com/screenshot2.png" alt="Search Feature" width="600">
 </p>
 
